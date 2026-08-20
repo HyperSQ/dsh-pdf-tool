@@ -1,0 +1,8 @@
+packages:
+  - "."
+nodeLinker: hoisted
+allowBuilds:
+  esbuild: true
+minimumReleaseAgeExclude:
+  - "@deepseek-ai/cordis"
+  - "@deepseek-ai/schemastery"

@@ -1,0 +1,21 @@
+# dsh-pdf-tool bundle patch
+#
+# Installed through the official CLI:
+#
+#   dsh plugin --profile <name> add dsh-pdf-tool
+#
+# The profile boot merges this patch (a single `insert` of the host plugin row).
+# Override config to set vision model (see README for full options):
+#
+#   - override:
+#       - id: dsh-pdf-tool
+#         config:
+#           visionModel: "your-vision-model"
+#           visionBaseUrl: "https://your-api-endpoint/v1"
+#           visionApiKey: "YOUR_API_KEY_ENV_VAR"
+#           visionPrompt: "请详细描述这张图片的内容"
+#           visionMaxTokens: 1024
+#           renderScale: 2
+- insert:
+    - id: dsh-pdf-tool
+      name: dsh-pdf-tool
